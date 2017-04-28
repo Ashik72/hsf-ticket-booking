@@ -1,0 +1,124 @@
+<div class="select_seating_options">
+  <div class="container seating_select">
+      <div class="row auto-clear">
+          <div class="col-sm-12">
+
+
+<?php
+
+$titan = TitanFramework::getInstance( 'hsf_tb' );
+$default_zone_opts = $titan->getOption( 'select_zone_opts' );
+$default_tot_opts = $titan->getOption( 'select_tot_opts' );
+$default_seats_opts = $titan->getOption( 'select_seats_opts' );
+$default_zone_opts = explode(PHP_EOL, $default_zone_opts);
+$default_tot_opts = explode(PHP_EOL, $default_tot_opts);
+$default_seats_opts = explode(PHP_EOL, $default_seats_opts);
+
+$default_zone_opts = array_map('trim', $default_zone_opts);
+$default_tot_opts = array_map('trim', $default_tot_opts);
+$default_seats_opts = array_map('trim', $default_seats_opts);
+
+ ?>
+
+            <span class="">Select Zone</span>
+          <span>
+
+            <select name="zone_opts" form="seating_plan_form">
+              <?php
+
+              foreach ($default_zone_opts as $key => $default_zone_single) {
+                $default_zone_single_val = str_replace(' ', '-', $default_zone_single); // Replaces all spaces with hyphens.
+                $default_zone_single_val = preg_replace('/[^A-Za-z0-9\-]/', '', $default_zone_single);
+                $default_zone_single_val = explode("|", $default_zone_single_val);
+                $default_zone_single = explode("|", $default_zone_single);
+
+                if (count($default_zone_single_val) == 1)
+                  _e('<option value="'.$default_zone_single_val[0].'">'.$default_zone_single[0].'</option>');
+                else
+                  _e('<option value="'.$default_zone_single_val[0].'">'.$default_zone_single_val[0].'</option>');
+
+              }
+
+               ?>
+            </select>
+
+
+          </span>
+          </div>
+
+          <div class="col-sm-12">
+
+            <span class="">Type of Ticket</span>
+<span>
+  <select name="tot_opts" form="seating_plan_form">
+
+  <?php
+
+  foreach ($default_tot_opts as $key => $default_zone_single) {
+    $default_zone_single_val = str_replace(' ', '-', $default_zone_single); // Replaces all spaces with hyphens.
+    $default_zone_single_val = preg_replace('/[^A-Za-z0-9\-]/', '', $default_zone_single);
+
+    _e('<option value="'.$default_zone_single_val.'">'.$default_zone_single.'</option>');
+
+  }
+
+   ?>
+  </select>
+</span>
+          </div>
+
+          <div class="col-sm-12">
+
+            <span class="">Seats</span>
+<span>
+
+    <select name="seating_opts" form="seating_plan_form">
+
+    <?php
+
+    foreach ($default_seats_opts as $key => $default_zone_single) {
+      $default_zone_single_val = str_replace(' ', '-', $default_zone_single); // Replaces all spaces with hyphens.
+      $default_zone_single_val = preg_replace('/[^A-Za-z0-9\-]/', '', $default_zone_single);
+
+      _e('<option value="'.$default_zone_single_val.'">'.$default_zone_single.'</option>');
+
+    }
+
+     ?>
+    </select>
+
+
+</span>
+          </div>
+
+          <div class="col-sm-12">
+
+            <form method="post" id="seating_plan_form">
+
+<span>
+
+  <div class="quantity_seats_price">
+  	<span style="width: 50%"><span>QTY</span><input step="1" min="1" max="" name="quantity_seats" value="1" title="Qty" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric" type="number"></span>
+    <span style="width: 50%"><span>Total</span><input type="text" name="seating_price_total"></span>
+    <input type="hidden" name="seating_product_id" value="<?php _e(get_the_ID()); ?>">
+    <?php
+    $product_obj = new WC_Product(get_the_ID());
+     ?>
+
+    <input type="hidden" name="seating_product_price_temp" value="<?php _e($product_obj->get_price()); ?>">
+
+  </div>
+
+</span>
+
+<div class="">
+  <input type="submit" value="Add To Cart">
+
+</div>
+            </form>
+
+
+          </div>
+      </div>
+  </div>
+</div>

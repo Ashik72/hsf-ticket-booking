@@ -1,0 +1,18 @@
+$headers = array('Accept' => 'application/json');
+$query = array('');
+$user = 'fdgjkdfjgdfgt89e546845rtrgdfgkdfhgfdg895464565465';
+$response = Unirest\Request::get('https://www.instagram.com/'.$user.'/?__a=1');
+
+$response = $response->body;
+
+
+d($response);
+
+________
+
+d($_COOKIE['instaToken']);
+$response = Unirest\Request::get(
+  'https://api.instagram.com/v1/users/self/media/liked?access_token='.$_COOKIE['instaToken']
+);
+$response = $response->body;
+d($response);

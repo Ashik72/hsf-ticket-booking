@@ -1,0 +1,68 @@
+<div class="zone_a_seating">
+
+
+  <?php
+  $z_b_seating_plan = $seating_plans['zone_a'];
+
+   ?>
+
+
+  <div class="title_z_a">
+    <span><?php _e($z_b_seating_plan['title']) ?></span>
+  </div>
+
+  <div class="seating_z_a">
+
+    <?php
+
+    $z_b_seating_plan = explode(PHP_EOL, $z_b_seating_plan['plan']);
+    //$z_b_seating_plan = array_map('intval', $z_b_seating_plan);
+    $z_b_seating_plan = ( (is_array($z_b_seating_plan)) ? $z_b_seating_plan : [] );
+
+    $default_seat_color = trim($default_seat_color);
+    $html = "";
+?>
+
+
+<?php
+    foreach ($z_b_seating_plan as $key => $z_b_seat) {
+      $z_b_seat = explode("|", $z_b_seat);
+
+      if (count($z_b_seat) == 1) {
+
+        $z_b_seat = (int) $z_b_seat[0];
+
+        $html .= "<div class='z_a_seat_holder'>";
+        while ($z_b_seat > 0) {
+
+          //$html .= "<span class='z_a_seat'><img src='".$default_seat_color."'></span>";
+          $html .= "<div class='z_a_seat'><img src='".$default_seat_color."'></div>";
+          $z_b_seat--;
+        }
+        $html .= "</div>";
+
+        continue;
+      }
+
+      $z_b_seat_no = (int) $z_b_seat[0];
+      $z_b_seat_color = $z_b_seat[1];
+
+      $html .= "<div class='z_a_seat_holder'>";
+      while ($z_b_seat_no > 0) {
+
+        $html .= "<span class='z_a_seat'><img src='".$z_b_seat_color."'></span>";
+
+        $z_b_seat_no--;
+      }
+      $html .= "</div>";
+
+
+    }
+
+    _e($html);
+
+     ?>
+
+
+  </div>
+</div>

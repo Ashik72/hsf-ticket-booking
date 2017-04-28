@@ -1,0 +1,705 @@
+.seating_plans .container {
+	width: initial;
+}
+
+.octagon {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: $octagon-width;
+  height: $octagon-width;
+}
+
+.octagon rect {
+  font-size: $rect-width;
+  stroke-width: $stroke-width;
+  stroke-linejoin: bevel;
+  stroke: crimson;
+  transform: translate($stroke-width/2, $stroke-width/2);
+}
+
+.col-sm-4.zone_c {
+	text-align: right;
+}
+
+.z_b_seat_holder {
+	display: inline-flex;
+}
+
+.z_b_seat img {
+	width: 60%;
+}
+
+.z_a_seat_holder {
+	display: inline-flex;
+}
+
+.z_a_seat img {
+	width: 60%;
+}
+
+.z_c_seat_holder {
+	display: inline-flex;
+}
+
+.z_c_seat img {
+	width: 60%;
+}
+
+.z_d_seat_holder {
+	display: inline-flex;
+}
+
+.z_d_seat img {
+	width: 60%;
+}
+
+.z_a_seat, .z_b_seat, .z_c_seat, .z_d_seat {
+	text-align: center;
+}
+
+.zone_a_seating {
+	/*transform: rotate(270deg);
+	text-align: center;*/
+}
+
+.z_a_seat img, .z_b_seat img, .z_c_seat img, .z_d_seat img {
+	width: 15px;
+	/*margin: 1rem;*/
+	/*margin: 0.6rem;*/
+	margin: 0.6rem;
+
+}
+
+.z_a_seat img {
+	width: 15px;
+	/*margin: 1rem;*/
+	/*margin: 0.6rem;*/
+	margin: 0.3rem;
+
+}
+
+.z_c_seat_img img {
+	margin: 0.6rem !important;
+}
+
+
+.col-sm-3.general_admission_container {
+  background: black none repeat scroll 0 0;
+  color: white;
+  height: 16rem;
+}
+
+.select_seating_options .col-sm-12 {
+	padding: 1rem;
+}
+
+.quantity_seats_price {
+	display: inline-flex;
+}
+
+.quantity_seats_price span {
+	padding: 1rem;
+}
+/*
+.zone_a_seating {
+	transform: odeg;
+	transform: rotate(-90deg);
+	margin: 19rem 0rem 0rem 0rem;
+	text-align: center;
+}
+
+.zone_c_seating {
+	transform: rotate(89deg);
+}
+
+.the_fx_cage img {
+	padding: 9rem 0rem 0rem 0;
+}
+
+.col-sm-3.general_admission_container {
+	background: black none repeat scroll 0 0;
+	color: white;
+	height: 55rem;
+	padding: 7rem;
+	text-align: unset;
+}*/
+
+
+.z_d_seat_holder {
+	/* margin: 0 auto !important; */
+	/* text-align: center !important; */
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	width: 100%;
+
+	display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+
+}
+
+.z_b_seat_holder {
+	/* margin: 0 auto !important; */
+	/* text-align: center !important; */
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	width: 100%;
+
+	display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+
+}
+
+
+.addOpacity, .addOpacityHover {
+	opacity: 0.4;
+}
+
+.selected_single_item {
+	font-size: 2rem;
+}
+
+
+.removeItem {
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 3rem;
+}
+
+.container.seating_select {
+	width: inherit;
+}
+
+.general_admission_div {
+	transform: rotate(90deg);
+	font-size: 2rem;
+}
+
+#main-content .seating_plans .container {
+	padding-top: 0;
+}
+
+.general_admission_div {
+  font-size: 2rem;
+  margin: -3rem;
+  transform: rotate(90deg);
+  width: 158%;
+}
+
+.title_z_a {
+  text-align: center;
+}
+
+
+.zone_c_vertical {
+  margin: 0 -0.5rem;
+}
+
+.title_z_a > span, .title_z_b > span, .title_z_d > span {
+  /*background: #c08507 none repeat scroll 0 0;*/
+  color: #000;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.title_z_a, .title_z_b, .title_z_d {
+  /*margin: 1rem;*/
+  text-align: center;
+}
+
+.seating_z_c {
+  float: right;
+}
+
+.zone_c_vertical, .zone_a_vertical {
+  display: inline-table;
+}
+
+.z_b_seat_holder, .z_d_seat_holder {
+  text-align: center;
+}
+
+
+.col-sm-3.general_admission_container {
+	cursor: pointer;
+}
+
+.selected_single_item {
+	border: 1px solid black;
+	padding: 1rem;
+}
+
+.zone_d_seating {
+	margin: 1.5rem auto;
+}
+
+.alreadySold {
+	opacity: 0.4;
+}
+
+.qty_seats, .qty_seats_price {
+	font-size: 2rem;
+	padding: 1rem;
+}
+
+#seating_plan_form input {
+	padding: 0rem;
+	margin: 1rem;
+}
+
+
+.zone_a_seating {
+	margin-top: -5rem;
+}
+
+.title_z_a_vertical {
+	text-align: center;
+	transform: rotate(90deg);
+	width: 4rem;
+	padding: 0 0rem;
+}
+
+.title_z_a_vertical > span {
+	background: #c08507 none repeat scroll 0 0;
+	color: #000;
+	font-weight: bold;
+	padding: 0.5rem;
+}
+
+.title_z_a, .title_z_b, .title_z_d {
+	background: #c08507;
+	padding: 1rem;
+}
+
+.rotated_title {
+	background: #c08507;
+}
+
+.ex1 {
+	border: none !important;
+}
+
+.entry-content tr td {
+	border-top: 1px solid transparent !important;
+}
+
+.seating_plans {
+	padding: 0.5rem;
+}
+
+.seating_z_a .z_a_seat img {
+	transform: rotate(270deg);
+}
+
+.seating_z_c .z_a_seat img {
+	transform: rotate(90deg);
+}
+
+/*.bottom_ordering_bar {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+		text-align: center;
+		background: black;
+}*/
+
+.bottom_ordering_bar {
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+		text-align: center;
+		/*background: black;*/
+}
+
+#seating_plan_form input {
+	padding: 0rem !important;
+	margin: 0rem !important;
+}
+
+.submit_form_hsf {
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.z_a_seat img {
+		width: 10%;
+	}
+	.title_z_a_vertical > span {
+	padding: 0;
+	}
+
+	.title_z_a_vertical {
+		width: auto;
+	}
+
+	.container, .et_pb_row {
+	width: 100% !important;
+	}
+
+	#tab-hsf_seat_plan {
+		padding: 0px !important;
+	}
+
+	.z_a_seat {
+		height: 0px !important;
+	}
+
+	.zone_a_seating {
+		margin-top: 0;
+	}
+
+	.rotated_title_content {
+		padding: 0 !important;
+	}
+
+	.z_a_seat img, .z_c_seat img {
+		margin: 0;
+	}
+
+	.zone_a_container_row {
+		display: inline-flex;
+	}
+
+	.z_a_seat.zone_a_left {
+	height: 0% !important;
+	}
+
+	.seating_z_a .z_a_seat img, .z_c_seat img {
+		/*width: 0.35rem;*/
+		width: 0.4rem;
+	}
+
+	.z_a_seat.zone_a_left, .z_c_seat {
+	height: 0% !important;
+	padding: 0% 20%;
+	}
+
+	.row.zone_c_container_row {
+		display: inline-flex;
+	}
+
+	.rotated_title {
+		display: none;
+	}
+
+	.title_z_a {
+		display: block !important;
+		padding: 0;
+		font-size: 70%;
+	}
+
+	.title_z_b, .title_z_d {
+	background: #c08507;
+	padding: 0rem;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.rotated_title_content {
+	width: 33% !important;
+}
+
+.seating_z_c .z_a_seat img {
+	width: 25%;
+}
+
+.zone_c_vertical .z_a_seat {
+	padding: 35% 0;
+}
+
+.z_b_seat img, .z_d_seat img {
+	/*width: 0.35rem !important;*/
+	width: 0.38rem !important;
+
+}
+
+.seating_center_table {
+	width: 80%;
+}
+
+.zone_container, .zone_container_raised {
+	width: 85%
+}
+
+.general_admission_container {
+	width: 15%
+}
+
+.general_admission_div {
+	font-size: 100%;
+	margin: 0rem;
+	transform: inherit;
+	width: 156%;
+	/*margin-top: 0 !important;*/
+}
+
+.seating_select {
+	display: none;
+}
+
+
+.content_hsf_area {
+	display: contents !important;
+	width: 100%;
+}
+
+.content_hsf_20_b {
+	width: 100% !important;
+	padding: 2%;
+	display: block !important;
+
+}
+
+.content_hsf_20 {
+	width: 0%;
+	padding: 0%;
+	display: none;
+}
+.content_hsf_80 {
+	width: 100% !important;
+}
+
+.hex_cage_td {
+	padding: 0 !important;
+}
+
+.z_a_seat {
+	line-height: 0.5rem;
+}
+
+.z_c_seat_img, .z_c_seat {
+	padding: 33% 0 0 0 !important;
+}
+
+.z_c_seat_empty {
+	padding: 0 !important;
+	line-height: 0;
+}
+
+.z_b_seat_unique {
+	line-height: 0.5em !important;
+}
+
+.general_admission_div {
+	line-height: 1.2em;
+}
+
+.rotated_title_content {
+	width: 8% !important;
+}
+
+.z_d_seat_holder, .z_b_seat_holder {
+	line-height: 0.9em !important;
+}
+
+.seating_center_table {
+	margin-top: 1rem;
+}
+
+.seating_center_table {
+		width: auto;
+}
+
+.general_admission_div span {
+	margin: 1em;
+}
+
+/*768 end*/
+
+}
+
+.zone_container_general_admission_container {
+	display: flex;
+}
+
+#ms-select-mobile-seat {
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+.addRemoveDiv input {
+	width: 50%;
+	text-align: center;
+}
+
+.addRemoveDiv {
+	margin: 1rem;
+	display: inline-flex;
+
+}
+
+.addRemoveIcon {
+	color: black;
+	font-size: 2rem;
+	padding: 0rem 2rem;
+	background: #fff;
+}
+
+.addRemoveIconActivate {
+	color: #fff;
+	background: gray;
+	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio:0) {
+
+	.zone_c_seating .zone_c_vertical {
+    display: inline;
+	}
+
+	.content_hsf_area {
+	    display: block !important;
+	 }
+
+	 .z_c_seat_empty {
+    /*padding: 33% 0 0 0 !important;*/
+		padding: 0% 0 0 0 !important;
+    line-height: 0;
+	}
+
+	#seating_plan_form input[type="submit"] {
+    padding: 1rem !important;
+    background: #fff;
+    margin: 1em !important;
+	}
+
+	.zone_a_left {
+    /*padding: 0% 22% !important;*/
+	}
+
+}
+
+.content_hsf_area {
+	display: inline-flex;
+	width: 100%;
+}
+
+.content_hsf_20 {
+	width: 15%;
+	padding: 2%;
+}
+
+.content_hsf_80 {
+	width: 70%;
+}
+
+.hsf_ticket_page {
+	background: #000;
+}
+
+.hsf_ticket_page .woocommerce-Tabs-panel {
+	padding: 0 !important;
+}
+
+.hsf_ticket_page .woocommerce-Tabs-panel {
+	padding: 0 !important;
+	background: inherit;
+}
+
+.hsf_ticket_page .woocommerce-tabs {
+	border: none !important;
+}
+
+#seating_plan_form input {
+	padding: 1rem;
+	margin: 1rem;
+}
+
+.qty_seats, .qty_seats_price {
+	color: #fff;
+}
+
+.selected_single_item {
+	color: #fff;
+}
+
+.rotated_title {
+	padding: 0 !important;
+}
+
+.hsf_ticket_page {
+  background: #000 none repeat scroll 0 0;
+  margin-top: 3rem;
+}
+
+.hex_cage_td {
+	padding: 0 !important;
+}
+
+.title_mobile_seletc {
+	color: #fff;
+	margin: 0.5rem 0rem;
+	font-size: 1.5rem;
+}
+
+.title_left_seat {
+	font-size: 1rem;
+	padding: 0rem 0.5rem;
+}
+
+.select-zone_div, .select-row_div {
+	display: inline-flex;
+	margin: 1rem 0rem;
+}
+
+.bottom_ordering_bar {
+	/* max-height: 85.2px; */
+	margin: 0.5rem 0;
+}
+
+
+@media not all and (min-resolution:.001dpcm) { @media {
+
+	.z_c_seat_empty {
+			padding: 0% 0 0 0 !important;
+			line-height: 0;
+	}
+
+	.title_z_a {
+			display: block !important;
+			padding: 0;
+			font-size: 65%;
+	}
+
+	.z_b_seat img, .z_d_seat img {
+			width: 0.36rem !important;
+	}
+
+	.z_d_seat_holder, .z_b_seat_holder {
+			line-height: 0.7em !important;
+	}
+
+	.title_z_b, .title_z_d {
+			margin: 1em auto;
+	}
+
+	.seating_z_a .z_a_seat img, .z_c_seat img {
+			width: 0.37rem;
+	}
+
+	.z_c_seat_empty {
+			padding: 0% 0 0 0 !important;
+	}
+
+	.general_admission_div {
+			line-height: 1.2em;
+	}
+
+	 } }
+
+	 .warning_text_user_deselect {
+		 display: none;
+	 	color: #fff;
+	 	font-size: 113%;
+	 	font-weight: bold;
+	 }
